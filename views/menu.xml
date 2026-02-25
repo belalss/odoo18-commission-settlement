@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Put our menu under Accounting / Invoicing (always exists) -->
+    <menuitem id="menu_commission_settlement_root"
+              name="Commission Settlements"
+              parent="account.menu_finance"
+              sequence="200"/>
+
+    <menuitem id="menu_commission_settlements"
+              name="Settlements"
+              parent="menu_commission_settlement_root"
+              action="action_x_commission_settlement"
+              sequence="10"/>
+
+    <menuitem id="menu_commission_settlement_wizard"
+              name="Generate Settlements"
+              parent="menu_commission_settlement_root"
+              action="action_x_commission_settlement_generate_wizard"
+              sequence="20"/>
+</odoo>
